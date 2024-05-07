@@ -4,7 +4,7 @@ document.getElementById("userForm").addEventListener("submit", function(event) {
     var bfp = calculateBFP(formData);
 
     var resultDiv = document.getElementById("result");
-    resultDiv.innerHTML = `Hello, ${formData.get("name")}! nigger!!!!!!!!! Your Body Fat Percentage is ${bfp.toFixed(2)}%.`;
+    resultDiv.innerHTML = `Hello, ${formData.get("name")}! Your Body Fat Percentage is ${bfp.toFixed(2)}%.`;
     resultDiv.style.display = "block";
 });
 
