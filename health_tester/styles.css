@@ -3,9 +3,8 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-size: cover;
     background-image: url("smooth-waves-vibrant-colors-flow-abstractly-generated-by-ai.jpg");
-    background-size: cover ;
-
 }
 
 .container {
@@ -35,62 +34,6 @@ label {
 input[type="text"],
 input[type="number"],
 select {
-    width: calc(100% - 20px);
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-#result {
-    display: none;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #b2d9f0;
-    border: 1px solid #f5c6cb;
-    border-radius: 4px;
-    color: #0e0708;
-}
-
-#result.success {
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-    color: #155724;
-}
-
-#result.error {
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
-    color: #721c24;
-}
-
-/* Fancy styles */
-.container {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-input[type="text"],
-input[type="number"],
-select {
     width: calc(100% - 16px);
     padding: 10px;
     margin-bottom: 15px;
@@ -99,8 +42,9 @@ select {
     box-sizing: border-box;
 }
 
-input[type="submit"] {
-    width: 100%;
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
     padding: 12px;
     background-color: #4caf50;
     color: white;
@@ -112,7 +56,8 @@ input[type="submit"] {
     text-transform: uppercase;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="reset"]:hover {
     background-color: #45a049;
 }
 
@@ -132,5 +77,5 @@ input[type="submit"]:hover {
 #result.error {
     background-color: #f8d7da;
     border-color: #f5c6cb;
-    color: #315686;
+    color: #721c24;
 }
